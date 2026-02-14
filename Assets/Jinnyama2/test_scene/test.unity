@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a267171d24eae847ac3354fde74dd96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Reset
-  resetKey: {fileID: -4373098278923354513, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  resetKey: {fileID: -659106051458492177, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
 --- !u!4 &792433431
 Transform:
   m_ObjectHideFlags: 0
@@ -688,7 +688,7 @@ PrefabInstance:
     - target: {fileID: 1970202694877195918, guid: d9bde5622ac4bb749bef6e59f3f72e4c, type: 3}
       propertyPath: selfDeathReference
       value: 
-      objectReference: {fileID: 2077161769878967960, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+      objectReference: {fileID: 1253787037959788428, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     - target: {fileID: 3316799629689214659, guid: d9bde5622ac4bb749bef6e59f3f72e4c, type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -890,6 +890,8 @@ MonoBehaviour:
   deathEffectPrefab: {fileID: 0}
   deathSE: {fileID: 8300000, guid: da26ec9d33a25684582db6e98250e06d, type: 3}
   volume: 5
+  blinkInterval: 0.1
+  blinkDuration: 1
 --- !u!82 &8485158740380477333
 AudioSource:
   m_ObjectHideFlags: 0
