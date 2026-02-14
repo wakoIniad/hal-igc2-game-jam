@@ -1,7 +1,8 @@
 using UnityEngine;
 using System;
 using System.Collections.Generic;
-
+using System.Collections;
+using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     //状態たち
     public float deathCount;
-    public Stack<LifeType> remainLives = new List<LifeType>();
+    public Stack<LifeType> remainLives = new Stack<LifeType>();
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,7 +22,7 @@ public class GameManager : MonoBehaviour
     }
 
     void Start() {
-        
+
     }
 
     // Update is called once per frame

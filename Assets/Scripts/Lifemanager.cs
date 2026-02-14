@@ -1,6 +1,9 @@
 using UnityEngine;
 using System;
 using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
+
 
 public class LifeType {
     public LifeType(Func<int, int> action) {
@@ -12,8 +15,8 @@ public class LifeType {
 
 public class Lifemanager : MonoBehaviour
 {
-    public Dictionary<string, LifeType> lifemap = new Dictionary<string, lifeMap>();
-    public void registerLifeType(string tag, Action<int, int> action) {
+    public Dictionary<string, LifeType> lifemap = new Dictionary<string, LifeType>();
+    public void registerLifeType(string tag, Func<int, int> action) {
         LifeType lifeType = new LifeType(action);
         lifeType.name = tag;
         lifemap.Add(tag, lifeType);
