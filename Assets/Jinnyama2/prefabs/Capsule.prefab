@@ -175,4 +175,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelfDestructTrigger
   selfDeathReference: {fileID: 0}
-  health: {fileID: 0}
+  health: {fileID: 3316799629689214659}
